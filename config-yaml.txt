@@ -1,0 +1,16 @@
+# Database Configuration
+database:
+  url: sqlite:///gdpr_compliance.db
+  
+# Logging Configuration
+logging:
+  level: INFO
+  file: logs/app.log
+
+# GDPR Compliance Settings
+gdpr:
+  retention_period_days: 730
+  consent_types:
+    - data_processing
+    - marketing
+    - analytics
